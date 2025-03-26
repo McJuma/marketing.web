@@ -21,6 +21,7 @@ function sendmessage(event){
         if (checkemail(mail)) {
             alert("Message sent successfully 😊! Please wait for our reply");
             form.submit(); // submit the form
+            form.reset();
         }
         else {
             form.reset();
