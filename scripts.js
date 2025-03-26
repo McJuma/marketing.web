@@ -17,7 +17,7 @@ function sendMessage(event) {
             alert("Message sent successfully 😊! Please wait for our reply");
             form.submit(); // submit the form
         } else {
-            form.reset();
+            // form.reset();
             alert("Please enter a valid email address!");
         }
     }
