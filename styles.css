@@ -1,0 +1,488 @@
+/* General Styles */
+*{
+    box-sizing: border-box;
+}
+html, body{
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* background-color: black; */
+}
+#logo{
+    width: 50px;
+    height: auto;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#top{
+    top: 0;
+    position: sticky;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px groove red;
+}
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+
+}
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #77aaff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #5599ff;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Services */
+.service {
+    margin-bottom: 20px;
+}
+@keyframes top_scroll {
+    0%{
+        background: none;
+    }
+    25%{
+        background: white;
+    }
+    50%{
+        background: none;
+    }
+    75%{
+        background: white;
+    }
+    100%{
+        background: none;
+    }
+    
+}
+.service h3 {
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    margin: 0;
+}
+/* Case Study Hero Section */
+#case-study-hero {
+    background: url('https://source.unsplash.com/random/1600x900?ecommerce,tech') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#case-study-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#case-study-hero p {
+    font-size: 1.2em;
+}
+
+/* Case Study Details */
+#case-study-details {
+    padding: 60px 0;
+}
+
+.case-study-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.case-study-content h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.case-study-content ul {
+    margin-bottom: 20px;
+}
+
+.case-study-content ul li {
+    margin-bottom: 10px;
+}
+
+.case-study-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Case Studies */
+#case-studies {
+    padding: 60px 0;
+}
+
+.case-study {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.case-study h3 {
+    margin-bottom: 10px;
+}
+
+.case-study p {
+    margin-bottom: 20px;
+}
+
+/* FAQ */
+#faq {
+    padding: 60px 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Newsletter */
+#newsletter {
+    background: #77aaff;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#newsletter-form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background: #555;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: #77aaff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #5599ff;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service img, .case-study img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Add this to existing CSS */
+
+
+
+@media (max-width: 768px) {
+    /* Header */
+    header h1 {
+        float: none;
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hero Section */
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    /* Container */
+    .container {
+        width: 90%;
+    }
+
+    /* Services Section */
+    .service {
+        text-align: center;
+    }
+
+    /* Testimonials Section */
+    .testimonial {
+        text-align: center;
+    }
+
+    /* Case Studies Section */
+    .case-study {
+        text-align: center;
+    }
+
+    /* Newsletter Section */
+    #newsletter-form {
+        flex-direction: column;
+    }
+
+    #newsletter-form input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Contact Form */
+    #contact-form {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    #hero h2 {
+        font-size: 1.5em;
+    }
+
+    #hero p {
+        font-size: 0.9em;
+    }
+
+    /* Buttons */
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
